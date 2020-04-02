@@ -9415,6 +9415,12 @@ readers do not read off random characters that represent icons */
   src: url("fonts/myriad/MyriadProBlackSemiExtended.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: ProximaNova;
+  font-style: normal;
+  src: url("fonts/ProximaNova-Regular.otf") format("opentype");
+}
+
 /*--------------------------------------------------------------
 3.0 Variables
 --------------------------------------------------------------*/
@@ -17316,7 +17322,7 @@ header {
   margin-left: 100px;
 }
 
-.header__buy-ticket {
+.header__register-me {
   color: #000000;
   font-family: "JosefinSans-600", sans-serif;
   display: inline-block;
@@ -17332,7 +17338,7 @@ header {
   background-position: 99%;
 }
 
-.header__buy-ticket:hover {
+.header__register-me:hover {
   transition: all 0.5s cubic-bezier(0, 0, 0.23, 1);
   background-position: 0%;
   color: #ffffff;
@@ -17429,7 +17435,7 @@ header {
   -o-box-shadow: 0px 0px 0px 0px #ffffff;
 }
 
-.header-2 .header__buy-ticket {
+.header-2 .header__register-me {
   color: #ffffff;
   font-family: "JosefinSans-600", sans-serif;
   display: inline-block;
@@ -17445,12 +17451,12 @@ header {
   background-position: 100%;
 }
 
-.header-2 .header__buy-ticket:hover {
+.header-2 .header__register-me:hover {
   transition: all 0.5s cubic-bezier(0, 0, 0.23, 1);
   background-position: 0%;
 }
 
-.header-2 .header__buy-ticket:hover span {
+.header-2 .header__register-me:hover span {
   color: #000000;
 }
 
@@ -17458,7 +17464,7 @@ header {
   .header__logo {
     margin-left: 0;
   }
-  .header__buy-ticket {
+  .header__register-me {
     width: 100px !important;
     font-size: 13px;
     height: 40px !important;
@@ -17749,3 +17755,83 @@ REPONSIVE
 --------------------------------------------------------------*/
 
 /*# sourceMappingURL=maps/style.css.map */
+/*--------------------------------------------------------------
+HEADER
+--------------------------------------------------------------*/
+.header-space {
+  width: 74.6%;
+}
+/*--------------------------------------------------------------
+HERO
+--------------------------------------------------------------*/
+.hero {
+  background-image: url('../images/our-assets/bg-header.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 795px;
+  margin-top: -100px;
+}
+
+.hero__oval {
+  -webkit-filter: blur(36px);
+  background-image: linear-gradient(48deg, #b797f3 18%, #825fe4 75%, var(--purpley) 75%);
+  filter: blur(36px);
+  height: 780px;
+  mix-blend-mode: overlay;
+  opacity: 0.59;
+  width: 779px;
+  margin-left: 50%;
+}
+
+.hero__logo {
+  padding-top: 185px;
+  text-align: center;
+  margin-bottom: 31px;
+}
+
+.hero__container {
+  text-align: center;
+}
+
+.hero__container__title {
+  color: #ffffff;
+  font-family: ProximaNova;
+  font-size: 42px;
+  /* font-stretch: normal;
+  font-style: normal; */
+  /* font-weight: normal; */
+  letter-spacing: -0.35px;
+  line-height: normal;
+  margin-bottom: 15px;
+  opacity: 0.69;
+  text-align: center;
+}
+
+.hero__container__text {
+  color: #ffffff;
+  font-family: ProximaNova;
+  font-size: 24px;
+  /* font-stretch: normal;
+  font-style: normal; */
+  font-weight: bold;
+  height: 70px;
+  letter-spacing: -0.2px;
+  line-height: normal;
+  margin: 0 auto 29px;
+  width: 421px;
+}
+
+.hero__container__button {
+  background-color: #ffffff;
+  border: none;
+  color: #5a34c5;
+  font-family: ProximaNova;
+  font-size: 14px;
+  /* font-stretch: normal;
+  font-style: normal; */
+  font-weight: bold;
+  height: 39px;
+  letter-spacing: -0.12px;
+  line-height: normal;
+  width: 116px;
+}
