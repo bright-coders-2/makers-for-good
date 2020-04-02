@@ -14554,6 +14554,14 @@ body {
   margin: 0;
 }
 
+.movein-ex--1 > img:nth-child(1) {
+  margin-left: 24.1%;
+}
+
+.experience__thumb--right > img:nth-child(1) {
+  margin-right: 24.8%;
+}
+
 .experience__tittle .experience__tittle1 h1:hover {
   transition: all 0.8s cubic-bezier(0, 0, 0.23, 1);
   background-position: 100% 100%;
@@ -14712,23 +14720,10 @@ body {
   overflow: hidden;
 }
 
-.experience__thumb img {
-  -moz-filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-}
-
-.experience__thumb:hover img {
-  -moz-filter: grayscale(0%);
-  -webkit-filter: grayscale(0%);
-  filter: grayscale(0%);
-  /* IE 9 */
-  /* Safari 3-8 */
-  transform: scale(1.05);
-}
-
 .experience__thumb--left {
   float: left;
+  padding-top: 120px;
+  padding-right: 33px;
 }
 
 .experience__thumb--right {
@@ -14738,19 +14733,28 @@ body {
 .experience__thumb--middle {
   float: right;
   margin-top: 100px;
+  padding-top: 110px;
+  padding-left: 70px;
 }
 
 .experience__text {
   text-align: center;
-  width: 77%;
   margin: 85px auto 0;
 }
 
 .experience__text p {
-  font-family: "Montserrat-400", sans-serif;
-  font-size: 22px;
-  color: #333333;
+  color: #303036;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: normal;
+  height: 150px;
+  letter-spacing: -0.15px;
+  line-height: normal;
   margin: 25px 0 40px;
+  text-align: center;
+  width: 550px;
 }
 
 .experience__text a {
@@ -14759,6 +14763,11 @@ body {
   text-transform: uppercase;
   font-family: "JosefinSans-600", sans-serif;
   display: inline-block;
+}
+
+.experience__text--bold{
+  font-weight: bold;
+  color: #5a34c5;
 }
 
 .experience__text a::before {
@@ -14901,14 +14910,15 @@ body {
     padding: 0 70px;
   }
   .experience__text {
-    margin: 55px auto 40px;
+    margin: 0 auto 62px auto;
   }
   .experience__text h1 {
-    font-size: 60px;
+    font-size: 62px;
+    color: #303036;
   }
-  .experience__text p {
-    margin: 20px 0;
-    font-size: 20px;
+  .experience__text h3{
+    font-size: 48px;
+    color: #303036;
   }
   .experience__thumb--left, .experience__thumb--middle {
     width: calc(100% + 35px);
