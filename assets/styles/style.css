@@ -13755,9 +13755,9 @@ body {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -moz-filter: grayscale(100%);
+  /* -moz-filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
+  filter: grayscale(100%); */
 }
 
 @media (max-width: 1200px) {
@@ -17548,6 +17548,148 @@ HERO
   letter-spacing: -0.12px;
   line-height: normal;
   width: 116px;
+}
+
+/*--------------------------------------------------------------
+PERSONAS QUE AYUDAR
+--------------------------------------------------------------*/
+.speaker-slider__item__container-title {
+  height: 415px;
+}
+
+@media (min-width: 700px) {
+  .speaker-slider__item__container-title {
+    height: 500px;
+  }
+
+  /* .speaker-slider__item__thumb {
+    width: 297px;
+  } */
+}
+
+.speaker-slider__item__title {
+  display: inline-block;
+  margin-top: 27px;
+  width: 75%;
+}
+
+.title-icon {
+  margin-left: 10%;
+
+  @media (min-width: 575px) {
+    margin-left: 14%;
+  }
+}
+
+.title-icon--salud {
+  transform: translate(0,-50%);
+}
+
+.slider__personas-ayudar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.img_ayuda {
+  display: block;
+}
+
+.salud__title {
+  display: inline-block;
+  font-size: 1.7rem;
+  margin-top: 27px;
+  width: 75%;
+}
+
+.card:nth-child(1) {
+  transform: translate(0,94px);
+}
+
+.card:nth-child(2) {
+  margin: 0 58px;
+}
+
+
+.card:nth-child(3) {
+  transform: translate(0,200px);
+}
+
+.card:nth-child(4) {
+  transform: translate(0,68px);
+  margin-left: 58px;
+  margin-bottom: 200px;
+}
+
+.next-arrow {
+  margin-left: auto;
+  margin-top: -504px;
+  text-align: center;
+  width: 30px;
+  z-index: 99;
+}
+
+.prev-arrow {
+  margin-left: 69%;
+  margin-top: -26px;
+  text-align: center;
+  width: 30px;
+  z-index: 99;
+}
+
+@media (max-width: 767px) {
+
+  .speaker-slider__item__title {
+    width: 40% !important;
+  }
+
+  .salud__title {
+    width: 40% !important;
+  }
+
+  .card {
+    display: block !important;
+    margin: 0 auto !important;
+    width: 298px !important;
+  }
+
+  .title-icon {
+    margin-left: 45% !important;
+  }
+}
+
+@media (max-width: 991px){
+  .card:nth-child(1) {
+    transform: translate(0,0);
+  }
+}
+
+
+@media (max-width: 991px) {
+  .card {
+    display: initial;
+  }
+
+  .speaker-slider__item__title {
+    width: 65%;
+  }
+
+  .salud__title {
+    width: 65%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card:nth-child(4) {
+    margin-bottom: 0;
+  }
+}
+
+
+@media (min-width: 990){
+  .slick-slide {
+    width: 298px;
+  }
 }
 
 .hero__container__button:hover{
