@@ -17073,8 +17073,11 @@ header {
 /*--------------------------------------------------------------
 FOOTER
 --------------------------------------------------------------*/
-footer {
-  background-color: #000000;
+.footer-container{
+  height: 722px;
+  background-image: url('../images/our-assets/bg-footer.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .footer {
@@ -17082,9 +17085,37 @@ footer {
   text-align: center;
 }
 
-.footer__logo img {
-  opacity: 0;
-  margin-bottom: 30px;
+.footer__logo{    
+  text-align: center;
+  margin: -26px auto 18px;
+}
+
+.footer__text{
+  text-align: center;
+}
+
+.footer__text__title{
+  color: #ffffff;
+  font-family: ProximaNova;
+  font-size: 42px;
+  letter-spacing: -0.35px;
+  line-height: normal;
+  margin-bottom: 15px;
+  opacity: 0.69;
+  text-align: center;
+}
+
+.footer__text__description{
+  color: #ffffff;
+  font-family: ProximaNova;
+  font-size: 24px;
+  font-weight: bold;
+  height: 70px;
+  letter-spacing: -0.2px;
+  line-height: normal;
+  font-weight: bolder;
+  width: 500px;
+  margin: 0 auto 10px;
 }
 
 .footer p {
@@ -17095,31 +17126,56 @@ footer {
   font-size: 18px;
 }
 
-.footer__get-ticket {
-  text-align: center;
-}
-
-.footer__get-ticket a {
-  color: #000000;
-  font-family: "JosefinSans-600", sans-serif;
-  display: inline-block;
-  text-align: center;
-  line-height: 47px;
-  background-color: #ffffff;
-  border: 1.5px solid #ffffff;
-  height: 45px;
-  width: 130px;
-  text-transform: uppercase;
-  background-image: linear-gradient(to right, #000000, #000000 50%, #ffffff 50%);
+.footer__text__button-mi-equipo{
+  background-color: transparent;
+  background-image: linear-gradient(to right, #ffffff, #ffffff 50%, transparent 50%);
   background-size: 210% 100%;
-  background-position: 99%;
-  margin: 50px 0;
+  background-position: 100%;
+  border: 1.5px solid #ffffff;
+  color: #ffffff;
+  font-family: ProximaNova;
+  font-size: 14px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  height: 39px;
+  letter-spacing: -0.12px;
+  line-height: normal;
+  width: 203px;
+  margin-left: auto;
+  margin-right: 1%;
 }
 
-.footer__get-ticket a:hover {
+.footer__text__button-mi-equipo:hover{
   transition: all 0.5s cubic-bezier(0, 0, 0.23, 1);
   background-position: 0%;
+  color: #000;
+}
+
+.footer__text__button-busco-equipo{
+  background-color: transparent;
+  background-image: linear-gradient(to right, #ffffff, #ffffff 50%, transparent 50%);
+  background-size: 210% 100%;
+  background-position: 100%;
+  border: 1.5px solid #ffffff;
   color: #ffffff;
+  font-family: ProximaNova;
+  font-size: 14px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  height: 39px;
+  letter-spacing: -0.12px;
+  line-height: normal;
+  width: 179px;
+  margin-right: auto;
+  margin-left: 1%;
+}
+
+.footer__text__button-busco-equipo:hover{
+  transition: all 0.5s cubic-bezier(0, 0, 0.23, 1);
+  background-position: 0%;
+  color: #000;
 }
 
 .footer__menu {
@@ -17127,49 +17183,33 @@ footer {
   text-align: center;
 }
 
+.footer__menu ul{
+  margin: 39px auto -20px;
+}
+
 .footer__menu li {
   list-style-type: none;
   display: inline-block;
   margin: 0 30px;
+  font-size: 18px;
 }
 
 .footer__menu a {
-  color: #999999;
-}
-
-.footer__menu a:hover {
-  color: #ffffff;
+  color: #ffff;
 }
 
 .copy-right {
-  border-top: 1px solid #666666;
+  border-top: 1px solid #ffff;
 }
 
-.copy-right__area {
-  height: 77px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.copy-right__container{
+  text-align: center;
 }
 
-.copy-right__left {
-  color: #999999;
-}
-
-.copy-right__left span {
-  color: #ffffff !important;
-}
-
-.copy-right__right {
-  width: 150px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.copy-right__right img:hover {
-  -webkit-filter: brightness(0) invert(1);
-  filter: brightness(0) invert(1);
+.copy-right__text{
+  font-size: 18px;
+  color: #ffff;
+  margin: 32px auto 27px;
 }
 
 @media screen and (max-width: 767px) {
@@ -17283,6 +17323,11 @@ footer {
   .footer-1 h1 a {
     line-height: 30px;
   }
+
+  .footer__text__description{
+    width: auto;
+    font-size: 20px;
+  }
 }
 
 .footer-3 {
@@ -17333,6 +17378,23 @@ footer {
   }
   .footer-3 h3 {
     font-size: 18px;
+  }
+}
+
+@media (max-width: 840px){
+.copy-right__text {
+  margin: auto auto;
+}
+
+}
+
+@media (max-width: 400px){
+  .footer__text__description {
+    font-size: 18px;
+  }
+
+  .footer__text__title {
+    font-size: 28px;
   }
 }
 
