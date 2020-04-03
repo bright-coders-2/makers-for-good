@@ -9418,7 +9418,7 @@ readers do not read off random characters that represent icons */
 @font-face {
   font-family: ProximaNova;
   font-style: normal;
-  src: url("fonts/ProximaNova-Regular.otf") format("opentype");
+  src: url("fonts/proximaNova/ProximaNova-Regular.otf") format("opentype");
 }
 
 /*--------------------------------------------------------------
@@ -11442,6 +11442,7 @@ GENERAL
 --------------------------------------------------------------*/
 body {
   cursor: none;
+  font-family: ProximaNova;
 }
 
 .cursor {
