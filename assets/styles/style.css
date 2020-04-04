@@ -9421,6 +9421,12 @@ readers do not read off random characters that represent icons */
   src: url("fonts/proximaNova/ProximaNova-Regular.otf") format("opentype");
 }
 
+@font-face {
+  font-family: ProximaNova-Bold;
+  font-style: normal;
+  src: url("fonts/proximaNova/Proxima Nova Bold.otf") format("opentype");
+}
+
 /*--------------------------------------------------------------
 3.0 Variables
 --------------------------------------------------------------*/
@@ -11082,7 +11088,7 @@ button,
 input,
 select,
 textarea {
-  font-family: "Montserrat-400", sans-serif;
+  font-family: ProximaNova;
   font-size: 15px;
   font-size: 0.9375rem;
   font-weight: 400;
@@ -11090,7 +11096,7 @@ textarea {
 }
 
 p {
-  font-family: "Montserrat-400", sans-serif;
+  font-family: ProximaNova;
   font-size: 15px;
   color: #666666;
   margin: 0;
@@ -11109,19 +11115,19 @@ h6 {
 h1 {
   font-size: 80px;
   font-size: 5rem;
-  font-family: "Montserrat-700", sans-serif;
+  font-family: ProximaNova;
 }
 
 h2 {
   font-size: 40px;
   font-size: 2.5rem;
-  font-family: "Montserrat-700", sans-serif;
+  font-family: ProximaNova;
 }
 
 h3 {
   font-size: 30px;
   font-size: 1.875rem;
-  font-family: "Montserrat-600", sans-serif;
+  font-family: ProximaNova;
 }
 
 h4 {
@@ -11225,7 +11231,7 @@ textarea {
 :-moz-placeholder,
 :-ms-input-placeholder {
   color: #999999;
-  font-family: "Montserrat-400", sans-serif;
+  font-family: ProximaNova;
 }
 
 /*--------------------------------------------------------------
@@ -11442,7 +11448,7 @@ GENERAL
 --------------------------------------------------------------*/
 body {
   cursor: none;
-  font-family: ProximaNova;
+  font-family: ProximaNova !important;
 }
 
 .cursor {
@@ -11952,14 +11958,14 @@ body {
 .pagebanner-3__text h1:nth-child(1) {
   -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: #ffffff;
-  font-family: "Montserrat-800", sans-serif;
+  font-family: ProximaNova;
   font-size: 90px;
   color: transparent;
   margin: 0;
 }
 
 .pagebanner-3__text h1:nth-child(2) {
-  font-family: "Montserrat-700", sans-serif;
+  font-family: ProximaNova;
   font-size: 120px;
   color: #ffffff;
   margin: 0;
@@ -12230,7 +12236,7 @@ body {
 }
 
 .blog-single-content__tags a {
-  font-family: "Montserrat-400", sans-serif;
+  font-family: ProximaNova;
   font-size: 15px;
   color: #666666;
   margin: 0 3px;
@@ -12343,7 +12349,7 @@ body {
 }
 
 .blog-single-content__writer__text__role {
-  font-family: "Montserrat-400", sans-serif;
+  font-family: ProximaNova;
   font-size: 14px;
   color: #999999;
   margin: 0 10px;
@@ -12467,7 +12473,7 @@ body {
 }
 
 .comment__item span {
-  font-family: "Montserrat-400", sans-serif;
+  font-family: ProximaNova;
   font-size: 14px;
   color: #999999;
   margin: 0 0 0 25px;
@@ -12642,7 +12648,7 @@ body {
   background-image: linear-gradient(0deg, #000000, #000000 50%, #ffffff 50%);
   background-size: 100% 200%;
   background-position: 0% 0%;
-  font-family: "Montserrat-700", sans-serif;
+  font-family: ProximaNova;
   font-size: 120px;
   color: #ffffff;
   margin: 155px 0 135px 0;
@@ -12656,7 +12662,7 @@ body {
 @media (max-width: 1200px) {
   .contact__tittle h1 {
     line-height: 110px !important;
-    font-family: "Montserrat-700", sans-serif;
+    font-family: ProximaNova;
     font-size: 100px;
     color: #ffffff;
     margin: 60px 0 !important;
@@ -12667,7 +12673,7 @@ body {
   .contact__tittle h1 {
     -webkit-text-stroke-width: 2px;
     line-height: 80px !important;
-    font-family: "Montserrat-700", sans-serif;
+    font-family: ProximaNova;
     font-size: 70px;
     color: #ffffff;
     margin: 60px 0 !important;
@@ -12678,7 +12684,7 @@ body {
   .contact__tittle h1 {
     letter-spacing: -2px !important;
     line-height: 65px !important;
-    font-family: "Montserrat-700", sans-serif;
+    font-family: ProximaNova;
     font-size: 55px;
     color: #ffffff;
     margin: 40px 0 !important;
@@ -12690,7 +12696,7 @@ body {
     letter-spacing: -2px !important;
     line-height: 45px !important;
     -webkit-text-stroke-width: 1px;
-    font-family: "Montserrat-700", sans-serif;
+    font-family: ProximaNova;
     font-size: 35px;
     color: #ffffff;
     margin: 40px 0 !important;
@@ -12743,23 +12749,17 @@ body {
 }
 
 .sponsor__tittle h1 {
-  letter-spacing: -4px;
-  text-align: center;
-  -webkit-text-stroke-width: 4px;
-  -webkit-text-stroke-color: #000000;
-  line-height: 130px;
+  -webkit-text-stroke: 1.5px #303036;
+  background-color: #ffffff;
   color: #ffffff;
-  text-decoration: none;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-image: linear-gradient(0deg, #000000, #000000 50%, #ffffff 50%);
-  background-size: 100% 200%;
-  background-position: 0% 0%;
-  font-family: "Montserrat-700", sans-serif;
+  font-family: ProximaNova-Bold;
   font-size: 120px;
-  color: #ffffff;
-  margin: 115px 0 105px 0;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: normal;
+  text-align: center;
 }
 
 .sponsor__tittle h1:hover {
@@ -12770,7 +12770,7 @@ body {
 @media (max-width: 1200px) {
   .sponsor__tittle h1 {
     line-height: 110px !important;
-    font-family: "Montserrat-700", sans-serif;
+    font-family: ProximaNova;
     font-size: 100px;
     color: #ffffff;
     margin: 60px 0 !important;
@@ -12781,7 +12781,7 @@ body {
   .sponsor__tittle h1 {
     -webkit-text-stroke-width: 2px;
     line-height: 80px !important;
-    font-family: "Montserrat-700", sans-serif;
+    font-family: ProximaNova;
     font-size: 70px;
     color: #ffffff;
     margin: 60px 0 !important;
@@ -12792,7 +12792,7 @@ body {
   .sponsor__tittle h1 {
     letter-spacing: -2px !important;
     line-height: 65px !important;
-    font-family: "Montserrat-700", sans-serif;
+    font-family: ProximaNova;
     font-size: 55px;
     color: #ffffff;
     margin: 40px 0 !important;
@@ -12804,7 +12804,7 @@ body {
     letter-spacing: -2px !important;
     line-height: 45px !important;
     -webkit-text-stroke-width: 1px;
-    font-family: "Montserrat-700", sans-serif;
+    font-family: ProximaNova;
     font-size: 35px;
     color: #ffffff;
     margin: 40px 0 !important;
@@ -13855,7 +13855,7 @@ body {
   background-image: linear-gradient(0deg, #000000, #000000 50%, #ffffff 50%);
   background-size: 100% 200%;
   background-position: 0% 0%;
-  font-family: "Montserrat-700", sans-serif;
+  font-family: ProximaNova;
   font-size: 120px;
   color: #ffffff;
   margin: 160px 0 160px 0;
@@ -13869,7 +13869,7 @@ body {
 @media (max-width: 1200px) {
   .venue-layout__tittle h1 {
     line-height: 110px !important;
-    font-family: "Montserrat-700", sans-serif;
+    font-family: ProximaNova;
     font-size: 100px;
     color: #ffffff;
     margin: 60px 0 !important;
@@ -13880,7 +13880,7 @@ body {
   .venue-layout__tittle h1 {
     -webkit-text-stroke-width: 2px;
     line-height: 80px !important;
-    font-family: "Montserrat-700", sans-serif;
+    font-family: ProximaNova;
     font-size: 70px;
     color: #ffffff;
     margin: 60px 0 !important;
@@ -13891,7 +13891,7 @@ body {
   .venue-layout__tittle h1 {
     letter-spacing: -2px !important;
     line-height: 65px !important;
-    font-family: "Montserrat-700", sans-serif;
+    font-family: ProximaNova;
     font-size: 55px;
     color: #ffffff;
     margin: 40px 0 !important;
@@ -13903,7 +13903,7 @@ body {
     letter-spacing: -2px !important;
     line-height: 45px !important;
     -webkit-text-stroke-width: 1px;
-    font-family: "Montserrat-700", sans-serif;
+    font-family: ProximaNova;
     font-size: 35px;
     color: #ffffff;
     margin: 40px 0 !important;
@@ -13947,7 +13947,7 @@ body {
 }
 
 .venue-video__text__tittle h2:nth-child(2) {
-  font-family: "Montserrat-400", sans-serif;
+  font-family: ProximaNova;
 }
 
 .venue-video__text__address {
@@ -13967,7 +13967,7 @@ body {
 
 .venue-video__text__address p {
   color: #000000;
-  font-family: "Montserrat-600", sans-serif;
+  font-family: ProximaNova;
 }
 
 .venue-video__text__address:hover iframe {
@@ -14007,7 +14007,7 @@ body {
 }
 
 .venue-layout-grid__item h3 {
-  font-family: "Montserrat-700", sans-serif;
+  font-family: ProximaNova;
   margin-bottom: 10px;
 }
 
@@ -14195,7 +14195,7 @@ body > section:nth-child(4) > section:nth-child(2) {
   background-image: linear-gradient(0deg, #000000, #000000 50%, #ffffff 50%);
   background-size: 100% 200%;
   background-position: 0% 0%;
-  font-family: "Montserrat-700", sans-serif;
+  font-family: ProximaNova;
   font-size: 120px;
   color: #ffffff;
   margin: 0;
@@ -14217,7 +14217,7 @@ body > section:nth-child(4) > section:nth-child(2) {
 @media (max-width: 1200px) {
   .experience__tittle .experience__tittle1 h1 {
     line-height: 110px !important;
-    font-family: "Montserrat-700", sans-serif;
+    font-family: ProximaNova;
     font-size: 100px;
     color: #ffffff;
     margin: 60px 0 !important;
@@ -14228,7 +14228,7 @@ body > section:nth-child(4) > section:nth-child(2) {
   .experience__tittle .experience__tittle1 h1 {
     -webkit-text-stroke-width: 2px;
     line-height: 80px !important;
-    font-family: "Montserrat-700", sans-serif;
+    font-family: ProximaNova;
     font-size: 70px;
     color: #ffffff;
     margin: 60px 0 !important;
@@ -14239,7 +14239,7 @@ body > section:nth-child(4) > section:nth-child(2) {
   .experience__tittle .experience__tittle1 h1 {
     letter-spacing: -2px !important;
     line-height: 65px !important;
-    font-family: "Montserrat-700", sans-serif;
+    font-family: ProximaNova;
     font-size: 55px;
     color: #ffffff;
     margin: 40px 0 !important;
@@ -14262,7 +14262,7 @@ body > section:nth-child(4) > section:nth-child(2) {
     letter-spacing: -2px !important;
     line-height: 45px !important;
     -webkit-text-stroke-width: 1px;
-    font-family: "Montserrat-700", sans-serif;
+    font-family: ProximaNova;
     font-size: 35px;
     color: #ffffff;
     margin: 40px 0 !important;
@@ -14283,7 +14283,7 @@ body > section:nth-child(4) > section:nth-child(2) {
   background-image: linear-gradient(0deg, #000000, #000000 50%, #ffffff 50%);
   background-size: 100% 200%;
   background-position: 0% 0%;
-  font-family: "Montserrat-700", sans-serif;
+  font-family: ProximaNova;
   font-size: 120px;
   color: #ffffff;
   margin: 0;
@@ -14297,7 +14297,7 @@ body > section:nth-child(4) > section:nth-child(2) {
 @media (max-width: 1200px) {
   .experience__tittle .experience__tittle2 h1 {
     line-height: 110px !important;
-    font-family: "Montserrat-700", sans-serif;
+    font-family: ProximaNova;
     font-size: 100px;
     color: #ffffff;
     margin: 60px 0 !important;
@@ -14308,7 +14308,7 @@ body > section:nth-child(4) > section:nth-child(2) {
   .experience__tittle .experience__tittle2 h1 {
     -webkit-text-stroke-width: 2px;
     line-height: 80px !important;
-    font-family: "Montserrat-700", sans-serif;
+    font-family: ProximaNova;
     font-size: 70px;
     color: #ffffff;
     margin: 60px 0 !important;
@@ -14319,7 +14319,7 @@ body > section:nth-child(4) > section:nth-child(2) {
   .experience__tittle .experience__tittle2 h1 {
     letter-spacing: -2px !important;
     line-height: 65px !important;
-    font-family: "Montserrat-700", sans-serif;
+    font-family: ProximaNova;
     font-size: 55px;
     color: #ffffff;
     margin: 40px 0 !important;
@@ -14331,7 +14331,7 @@ body > section:nth-child(4) > section:nth-child(2) {
     letter-spacing: -2px !important;
     line-height: 45px !important;
     -webkit-text-stroke-width: 1px;
-    font-family: "Montserrat-700", sans-serif;
+    font-family: ProximaNova;
     font-size: 35px;
     color: #ffffff;
     margin: 40px 0 !important;
@@ -14344,7 +14344,7 @@ body > section:nth-child(4) > section:nth-child(2) {
 
 .experience__tittle h3 {
   text-align: center;
-  font-family: "Montserrat-700", sans-serif;
+  font-family: ProximaNova;
   font-size: 170px;
   color: #000000;
   margin: 0;
@@ -15202,7 +15202,7 @@ body > section:nth-child(4) > section:nth-child(2) {
   background-image: linear-gradient(0deg, #000000, #000000 50%, #ffffff 50%);
   background-size: 100% 200%;
   background-position: 0% 0%;
-  font-family: "Montserrat-700", sans-serif;
+  font-family: ProximaNova;
   font-size: 120px;
   color: #ffffff;
   margin: 120px 0 115px 0;
@@ -15216,7 +15216,7 @@ body > section:nth-child(4) > section:nth-child(2) {
 @media (max-width: 1200px) {
   .portfilio-1__tittle h1 {
     line-height: 110px !important;
-    font-family: "Montserrat-700", sans-serif;
+    font-family: ProximaNova;
     font-size: 100px;
     color: #ffffff;
     margin: 60px 0 !important;
@@ -15227,7 +15227,7 @@ body > section:nth-child(4) > section:nth-child(2) {
   .portfilio-1__tittle h1 {
     -webkit-text-stroke-width: 2px;
     line-height: 80px !important;
-    font-family: "Montserrat-700", sans-serif;
+    font-family: ProximaNova;
     font-size: 70px;
     color: #ffffff;
     margin: 60px 0 !important;
@@ -15238,7 +15238,7 @@ body > section:nth-child(4) > section:nth-child(2) {
   .portfilio-1__tittle h1 {
     letter-spacing: -2px !important;
     line-height: 65px !important;
-    font-family: "Montserrat-700", sans-serif;
+    font-family: ProximaNova;
     font-size: 55px;
     color: #ffffff;
     margin: 40px 0 !important;
@@ -15250,7 +15250,7 @@ body > section:nth-child(4) > section:nth-child(2) {
     letter-spacing: -2px !important;
     line-height: 45px !important;
     -webkit-text-stroke-width: 1px;
-    font-family: "Montserrat-700", sans-serif;
+    font-family: ProximaNova;
     font-size: 35px;
     color: #ffffff;
     margin: 40px 0 !important;
@@ -15275,7 +15275,7 @@ body > section:nth-child(4) > section:nth-child(2) {
 .portfilio-1__category__item h2 {
   -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: #cccccc;
-  font-family: "Montserrat-700", sans-serif;
+  font-family: ProximaNova;
   font-size: 60px;
   color: #ffffff;
   margin: -25px 0 0;
@@ -15309,7 +15309,7 @@ body > section:nth-child(4) > section:nth-child(2) {
 }
 
 .portfilio-1__category__item__group li a:hover {
-  font-family: "Montserrat-600", sans-serif;
+  font-family: ProximaNova;
 }
 
 .portfilio-1__item {
@@ -15773,7 +15773,7 @@ body > section:nth-child(4) > section:nth-child(2) {
   background-image: linear-gradient(0deg, #000000, #000000 50%, #ffffff 50%);
   background-size: 100% 200%;
   background-position: 0% 0%;
-  font-family: "Montserrat-700", sans-serif;
+  font-family: ProximaNova;
   font-size: 120px;
   color: #ffffff;
   margin: 150px 0 140px 0;
@@ -15787,7 +15787,7 @@ body > section:nth-child(4) > section:nth-child(2) {
 @media (max-width: 1200px) {
   .portfolio-3__tittle h1 {
     line-height: 110px !important;
-    font-family: "Montserrat-700", sans-serif;
+    font-family: ProximaNova;
     font-size: 100px;
     color: #ffffff;
     margin: 60px 0 !important;
@@ -15798,7 +15798,7 @@ body > section:nth-child(4) > section:nth-child(2) {
   .portfolio-3__tittle h1 {
     -webkit-text-stroke-width: 2px;
     line-height: 80px !important;
-    font-family: "Montserrat-700", sans-serif;
+    font-family: ProximaNova;
     font-size: 70px;
     color: #ffffff;
     margin: 60px 0 !important;
@@ -15809,7 +15809,7 @@ body > section:nth-child(4) > section:nth-child(2) {
   .portfolio-3__tittle h1 {
     letter-spacing: -2px !important;
     line-height: 65px !important;
-    font-family: "Montserrat-700", sans-serif;
+    font-family: ProximaNova;
     font-size: 55px;
     color: #ffffff;
     margin: 40px 0 !important;
@@ -15821,7 +15821,7 @@ body > section:nth-child(4) > section:nth-child(2) {
     letter-spacing: -2px !important;
     line-height: 45px !important;
     -webkit-text-stroke-width: 1px;
-    font-family: "Montserrat-700", sans-serif;
+    font-family: ProximaNova;
     font-size: 35px;
     color: #ffffff;
     margin: 40px 0 !important;
@@ -16065,7 +16065,7 @@ body > section:nth-child(4) > section:nth-child(2) {
   background-image: linear-gradient(0deg, #000000, #000000 50%, #ffffff 50%);
   background-size: 100% 200%;
   background-position: 0% 0%;
-  font-family: "Montserrat-700", sans-serif;
+  font-family: ProximaNova;
   font-size: 120px;
   color: #ffffff;
   margin: 150px 0 130px 0;
@@ -16079,7 +16079,7 @@ body > section:nth-child(4) > section:nth-child(2) {
 @media (max-width: 1200px) {
   .porfolio-single__tittle h1 {
     line-height: 110px !important;
-    font-family: "Montserrat-700", sans-serif;
+    font-family: ProximaNova;
     font-size: 100px;
     color: #ffffff;
     margin: 60px 0 !important;
@@ -16090,7 +16090,7 @@ body > section:nth-child(4) > section:nth-child(2) {
   .porfolio-single__tittle h1 {
     -webkit-text-stroke-width: 2px;
     line-height: 80px !important;
-    font-family: "Montserrat-700", sans-serif;
+    font-family: ProximaNova;
     font-size: 70px;
     color: #ffffff;
     margin: 60px 0 !important;
@@ -16101,7 +16101,7 @@ body > section:nth-child(4) > section:nth-child(2) {
   .porfolio-single__tittle h1 {
     letter-spacing: -2px !important;
     line-height: 65px !important;
-    font-family: "Montserrat-700", sans-serif;
+    font-family: ProximaNova;
     font-size: 55px;
     color: #ffffff;
     margin: 40px 0 !important;
@@ -16113,7 +16113,7 @@ body > section:nth-child(4) > section:nth-child(2) {
     letter-spacing: -2px !important;
     line-height: 45px !important;
     -webkit-text-stroke-width: 1px;
-    font-family: "Montserrat-700", sans-serif;
+    font-family: ProximaNova;
     font-size: 35px;
     color: #ffffff;
     margin: 40px 0 !important;
@@ -16347,7 +16347,7 @@ body > section:nth-child(4) > section:nth-child(2) {
   background-image: linear-gradient(0deg, #000000, #000000 50%, #ffffff 50%);
   background-size: 100% 200%;
   background-position: 0% 0%;
-  font-family: "Montserrat-700", sans-serif;
+  font-family: ProximaNova;
   font-size: 120px;
   color: #ffffff;
   margin: 125px 0 75px 0;
@@ -16361,7 +16361,7 @@ body > section:nth-child(4) > section:nth-child(2) {
 @media (max-width: 1200px) {
   .testi-1__tittle h1 {
     line-height: 110px !important;
-    font-family: "Montserrat-700", sans-serif;
+    font-family: ProximaNova;
     font-size: 100px;
     color: #ffffff;
     margin: 60px 0 !important;
@@ -16372,7 +16372,7 @@ body > section:nth-child(4) > section:nth-child(2) {
   .testi-1__tittle h1 {
     -webkit-text-stroke-width: 2px;
     line-height: 80px !important;
-    font-family: "Montserrat-700", sans-serif;
+    font-family: ProximaNova;
     font-size: 70px;
     color: #ffffff;
     margin: 60px 0 !important;
@@ -16383,7 +16383,7 @@ body > section:nth-child(4) > section:nth-child(2) {
   .testi-1__tittle h1 {
     letter-spacing: -2px !important;
     line-height: 65px !important;
-    font-family: "Montserrat-700", sans-serif;
+    font-family: ProximaNova;
     font-size: 55px;
     color: #ffffff;
     margin: 40px 0 !important;
@@ -16395,7 +16395,7 @@ body > section:nth-child(4) > section:nth-child(2) {
     letter-spacing: -2px !important;
     line-height: 45px !important;
     -webkit-text-stroke-width: 1px;
-    font-family: "Montserrat-700", sans-serif;
+    font-family: ProximaNova;
     font-size: 35px;
     color: #ffffff;
     margin: 40px 0 !important;
@@ -16666,7 +16666,7 @@ body > section:nth-child(4) > section:nth-child(2) {
 }
 
 .testi-2__content p {
-  font-family: "Montserrat-300", sans-serif;
+  font-family: ProximaNova;
   color: #e6e6e6;
   font-size: 20px;
   margin: 30px 0;
@@ -17416,7 +17416,7 @@ FOOTER
 }
 
 .footer-3 h3 {
-  font-family: "Montserrat-400", sans-serif;
+  font-family: ProximaNova;
 }
 
 @media (max-width: 768px) {
