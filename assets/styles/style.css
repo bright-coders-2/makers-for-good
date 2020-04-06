@@ -17761,3 +17761,27 @@ PERSONAS QUE AYUDAR
   background-position: 0%;
   color: #000;
 }
+
+
+
+/*--------------------------------------------------------------
+MENTORES PAGE
+--------------------------------------------------------------*/
+
+@media (min-width: 768px) {
+  .spk--height--500 {
+    height: 53%;
+  }
+  .spk--height--400 {
+    height: 42%;
+  }
+  .spk--height--600 {
+    height: 49%;
+  }
+}
+
+@media (min-width: 2000px) {
+  .spk--height--500 {
+    height: 70%;
+  }
+}
