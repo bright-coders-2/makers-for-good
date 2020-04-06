@@ -61,6 +61,19 @@ $(document).ready(function(){
 
 //------------------END SPONSOR SLIDER-------------------------------------
 
+//------------------HIDE MENU---------------------------------------------
+
+function hideMenu(){
+  var menu = document.getElementById('menu');
+  if(menu.style.display == "block") {
+    menu.style.display = "none";
+  }
+  else {
+    menu.style.display = "block";
+  }
+}
+
+//------------------END HIDE MENU-------------------------------------------
 
   // $('.slider__personas').each(function () {
   //   $(this).slick({
@@ -264,6 +277,11 @@ $(document).ready(function(){
         $(this).find('i').toggleClass('arrow-rotation');
         $(this).find('.sub-menu').slideToggle();
 
+    });
+    $('.menu-link').on('click',function(){
+      $('.menu-nav').removeClass("menu-nav-active");
+      $('.header__menu-icon').removeClass('button-eff');
+      $('.menu-nav nav').removeClass('nav-effect');
     });
 
     var position = $(window).scrollTop() ;
