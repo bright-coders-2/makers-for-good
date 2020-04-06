@@ -129,7 +129,6 @@ $(document).ready(function(){
         $($contain).slick({
 
             arrows: false,
-            rows: 2,
             slidesToShow: 1,
             slidesToScroll: 3,
             // vertical: true,
@@ -139,7 +138,7 @@ $(document).ready(function(){
             dots: false,
             fade: true,
             speed: 900,
-            infinite: true,
+            infinite: false,
             cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
             responsive: [
             {
