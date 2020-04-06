@@ -84,7 +84,8 @@ $(document).ready(function(){
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          fade: true,
         }
       // },
       // {
@@ -128,6 +129,7 @@ $(document).ready(function(){
         $($contain).slick({
 
             arrows: false,
+            rows: 2,
             slidesToShow: 1,
             slidesToScroll: 3,
             // vertical: true,
