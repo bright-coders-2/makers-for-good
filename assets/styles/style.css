@@ -17667,10 +17667,6 @@ PERSONAS QUE AYUDAR
     display: initial;
   }
 
-  div.slick-current:nth-child(3) > div:nth-child(1) > div:nth-child(1) {
-    margin-bottom: 87px;
-  }
-
   .speaker-slider__item__title {
     width: 65%;
   }
@@ -17680,11 +17676,18 @@ PERSONAS QUE AYUDAR
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .next-arrow {
-    margin-top: -562px;
+    margin-top: -452px;
   }
 }
+
+@media (min-width: 768px) {
+  .next-arrow {
+    margin-top: -503px;
+  }
+}
+
 
 @media (min-width: 1200px) {
   .card:nth-child(4) {
