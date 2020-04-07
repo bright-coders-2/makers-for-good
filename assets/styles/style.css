@@ -17632,7 +17632,11 @@ PERSONAS QUE AYUDAR
   display: inline-block;
   margin-top: 27px;
   width: 75%;
+  font-size: 29px;
+  text-transform: none;
 }
+
+
 
 .title-icon {
   margin-left: 10%;
@@ -17705,7 +17709,8 @@ PERSONAS QUE AYUDAR
   }
 
   .salud__title {
-    width: 40% !important;
+    /* width: 40% !important; */
+    width: 100% !important;
   }
 
   .card {
@@ -17715,7 +17720,8 @@ PERSONAS QUE AYUDAR
   }
 
   .title-icon {
-    margin-left: 45% !important;
+    /* margin-left: 45% !important; */
+    margin-left: 25% !important;
   }
 }
 
@@ -17773,6 +17779,85 @@ PERSONAS QUE AYUDAR
   color: #000;
 }
 
+/*--------------------------------------------------------------
+PERSONAS QUE AYUDAR - ANIMATION TITLES
+--------------------------------------------------------------*/
+.container {
+  margin-bottom: 25px;
+}
+
+.contact__title--card {
+  text-align: left;
+  width: 60%;
+}
+
+.contact__title--card2 {
+  text-align: left;
+  width: 55%;
+}
+
+@media (min-width: 577px){
+  .container {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 768px){
+  .contact__title--card, .contact__title--card2 {
+    width: 50%;
+  }
+}
+
+@media (min-width: 990px){
+  .container {
+    margin-bottom: 150px;
+  }
+}
+
+.container-title {
+  display: inline-block;
+  margin: 0;
+}
+
+@media (min-width: 992px){
+  .contact__title--card, .contact__title--card2 {
+    width: 60%;
+  }
+}
+
+.link__pointer {
+  cursor: pointer;
+}
+
+.speaker-slider__item__title--animation {
+  width: 100%;
+}
+
+.title-icon--animation {
+  margin-left: 25%;
+}
+
+.experience__text .link-draw__hover .svg--1 {
+  left: 0px;
+  top: -22px;
+  width: 100%;
+}
+
+.experience__text .link-draw__hover .svg--2 {
+  left: -6px;
+  top: -10px;
+  width: 100%;
+}
+
+.experience__text .link-draw__hover .svg--3 {
+  top: 2px;
+}
+
+.experience__text .link-draw__hover .svg--4 {
+  top: 3px;
+  width: 100%;
+  left: 1px;
+}
 
 
 /*--------------------------------------------------------------
