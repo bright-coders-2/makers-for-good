@@ -17329,7 +17329,7 @@ FOOTER
 
 @media screen and (max-width: 767px) {
   .footer {
-    padding: 80px 0 60px;
+    padding: 80px 0 50px;
   }
   .footer__menu li {
     display: block;
@@ -17510,6 +17510,17 @@ FOOTER
 
   .footer__text__title {
     font-size: 28px;
+  }
+}
+
+@media (max-width: 389px){
+  .footer__text__button-mi-equipo {
+    margin-bottom: 12px;
+    margin-top: -7px;
+  }
+
+  .footer__text__button-busco-equipo {
+    margin-bottom: -12px;
   }
 }
 
