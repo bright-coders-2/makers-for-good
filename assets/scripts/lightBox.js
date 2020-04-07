@@ -57,7 +57,7 @@ $(document).ready(function(){
             $(lightbox.config.lightboxID).append(
                 '<div class="exit">'+
                     '<p class="explosed">M E N T O R E S</p>'+
-                    '<p class="more-profile">More Profiles</p>'+
+                    '<p class="more-profile">Más Perfiles</p>'+
                 '</div>'
             );
         }
@@ -68,8 +68,8 @@ $(document).ready(function(){
                 '<div class="prev">'+
                     '<div class="speaker-slide-arrow">'+
                         '<p class="link link--mallki">'+
-                            'ANT<span data-letters="ANT"></span>'+
-                            '<span data-letters="ANT"></span>'+
+                            'PREV<span data-letters="PREV"></span>'+
+                            '<span data-letters="PREV"></span>'+
                         '</p>'+
                     '</div>'+
                 '</div>'+
