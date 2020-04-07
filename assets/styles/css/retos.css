@@ -1,0 +1,116 @@
+body{
+  font-family: ProximaNova;
+  cursor: default !important;
+}
+
+.reto-title{
+  text-align: center;
+}
+
+.reto-container{
+  margin-bottom: 25px;
+}
+
+.reto-container__img{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.reto-container__img img{
+  width: 85%;
+}
+
+.reto-container__text{
+  text-align: center;
+}
+
+.reto-container__text h4{
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.reto-container__text__description{
+  text-align: justify;
+  margin: 10px 12px;
+}
+
+.reto-container__text__objective--bold{
+  font-weight: bold;
+}
+
+.reto-container__text__objective{
+  text-align: justify;
+  margin: 10px 12px;
+}
+
+.reto-container__text__list{
+  margin-left: 20px;
+  list-style: none;
+  text-align: left;
+}
+
+.reto-container__text__registrarme-button{
+  background-color: #815ee4;
+  background-image: linear-gradient(to right, #ffffff, #ffffff 50%, transparent 50%);
+  background-size: 210% 100%;
+  background-position: 100%;
+  border: 1.5px solid #ffffff;
+  color: #ffffff;
+  font-family: ProximaNova;
+  font-size: 14px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  height: 39px;
+  letter-spacing: -0.12px;
+  line-height: normal;
+  width: 200px;
+  margin:10px auto;
+  text-transform: uppercase;
+}
+
+.reto-container__text__registrarme-button:hover{
+  transition: all 0.5s cubic-bezier(0, 0, 0.23, 1);
+  background-position: 0%;
+  color: #000;
+  border: 1.5px solid #000;
+}
+
+@media (min-width:900px){
+  .reto-container {
+    display: flex;
+    flex-direction: row;
+    margin: 50px auto;
+    max-width: 1440px;
+  }
+
+  .reto-container__img {
+    width: 50%;
+    display: block;
+    margin: auto 10px;
+  }
+
+  .reto-container__text {
+    width: 50%;
+    display: block;
+    margin: auto 10px;
+  }
+
+  .reto-container__text h4{
+    text-align: left;
+    margin-left: 10px;
+  }
+
+}
+
+@media (min-width:1200px){
+  .reto-container__text__description, .reto-container__text__objective, .reto-container__text__list{
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 2560px){
+  .reto-container__text__description, .reto-container__text__objective, .reto-container__text__list{
+    font-size: 20px;
+  }
+}
